@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Example.Domain.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Example.Domain.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Example.Domain.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Example.Domain.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Example.Domain.Entities/Example.Domain.Entities.csproj",
+      "msbuildProject": "../Example.Domain.Entities/Example.Domain.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Example.Domain.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\User\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\CSharp\\RegistoPermisos\\Example.Domain.Entities\\Example.Domain.Entities.csproj": {
+              "projectPath": "D:\\CSharp\\RegistoPermisos\\Example.Domain.Entities\\Example.Domain.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

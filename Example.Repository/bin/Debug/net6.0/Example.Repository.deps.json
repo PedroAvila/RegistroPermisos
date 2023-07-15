@@ -9,6 +9,7 @@
       "Example.Repository/1.0.0": {
         "dependencies": {
           "Example.Domain.Entities": "1.0.0",
+          "Example.Domain.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.Design": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
@@ -495,6 +496,14 @@
         "runtime": {
           "Example.Domain.Entities.dll": {}
         }
+      },
+      "Example.Domain.Service/1.0.0": {
+        "dependencies": {
+          "Example.Domain.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Example.Domain.Service.dll": {}
+        }
       }
     }
   },
@@ -806,6 +815,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "Example.Domain.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Example.Domain.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

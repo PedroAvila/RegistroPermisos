@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Example.Domain.Service/1.0.0": {
+        "dependencies": {
+          "Example.Domain.Entities": "1.0.0"
+        },
         "runtime": {
           "Example.Domain.Service.dll": {}
+        }
+      },
+      "Example.Domain.Entities/1.0.0": {
+        "runtime": {
+          "Example.Domain.Entities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Example.Domain.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Example.Domain.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

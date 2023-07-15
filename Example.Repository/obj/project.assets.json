@@ -792,6 +792,19 @@
         "runtime": {
           "bin/placeholder/Example.Domain.Entities.dll": {}
         }
+      },
+      "Example.Domain.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Example.Domain.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Example.Domain.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Example.Domain.Service.dll": {}
+        }
       }
     }
   },
@@ -2018,11 +2031,17 @@
       "type": "project",
       "path": "../Example.Domain.Entities/Example.Domain.Entities.csproj",
       "msbuildProject": "../Example.Domain.Entities/Example.Domain.Entities.csproj"
+    },
+    "Example.Domain.Service/1.0.0": {
+      "type": "project",
+      "path": "../Example.Domain.Service/Example.Domain.Service.csproj",
+      "msbuildProject": "../Example.Domain.Service/Example.Domain.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Example.Domain.Entities >= 1.0.0",
+      "Example.Domain.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.20",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.20",
@@ -2059,6 +2078,9 @@
           "projectReferences": {
             "D:\\CSharp\\RegistoPermisos\\Example.Domain.Entities\\Example.Domain.Entities.csproj": {
               "projectPath": "D:\\CSharp\\RegistoPermisos\\Example.Domain.Entities\\Example.Domain.Entities.csproj"
+            },
+            "D:\\CSharp\\RegistoPermisos\\Example.Domain.Service\\Example.Domain.Service.csproj": {
+              "projectPath": "D:\\CSharp\\RegistoPermisos\\Example.Domain.Service\\Example.Domain.Service.csproj"
             }
           }
         }

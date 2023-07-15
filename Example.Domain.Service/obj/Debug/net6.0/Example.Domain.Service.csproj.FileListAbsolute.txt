@@ -10,3 +10,6 @@ D:\CSharp\RegistoPermisos\Example.Domain.Service\obj\Debug\net6.0\Example.Domain
 D:\CSharp\RegistoPermisos\Example.Domain.Service\obj\Debug\net6.0\refint\Example.Domain.Service.dll
 D:\CSharp\RegistoPermisos\Example.Domain.Service\obj\Debug\net6.0\Example.Domain.Service.pdb
 D:\CSharp\RegistoPermisos\Example.Domain.Service\obj\Debug\net6.0\ref\Example.Domain.Service.dll
+D:\CSharp\RegistoPermisos\Example.Domain.Service\bin\Debug\net6.0\Example.Domain.Entities.dll
+D:\CSharp\RegistoPermisos\Example.Domain.Service\bin\Debug\net6.0\Example.Domain.Entities.pdb
+D:\CSharp\RegistoPermisos\Example.Domain.Service\obj\Debug\net6.0\Example.Domain.Service.csproj.CopyComplete

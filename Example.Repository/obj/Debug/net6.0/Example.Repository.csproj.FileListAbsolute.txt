@@ -15,3 +15,5 @@ D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Ent
 D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Entities.pdb
 D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.csproj.CopyComplete
 D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.genruntimeconfig.cache
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Service.dll
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Service.pdb
