@@ -1,0 +1,17 @@
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Repository.deps.json
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Repository.dll
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Repository.pdb
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.csproj.AssemblyReference.cache
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.AssemblyInfoInputs.cache
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.AssemblyInfo.cs
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.csproj.CoreCompileInputs.cache
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.dll
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\refint\Example.Repository.dll
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.pdb
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\ref\Example.Repository.dll
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Repository.runtimeconfig.json
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Entities.dll
+D:\CSharp\RegistoPermisos\Example.Repository\bin\Debug\net6.0\Example.Domain.Entities.pdb
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.csproj.CopyComplete
+D:\CSharp\RegistoPermisos\Example.Repository\obj\Debug\net6.0\Example.Repository.genruntimeconfig.cache

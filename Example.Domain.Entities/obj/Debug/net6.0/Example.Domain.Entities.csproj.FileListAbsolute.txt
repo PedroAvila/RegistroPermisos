@@ -1,0 +1,12 @@
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\bin\Debug\net6.0\Example.Domain.Entities.deps.json
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\bin\Debug\net6.0\Example.Domain.Entities.dll
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\bin\Debug\net6.0\Example.Domain.Entities.pdb
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.csproj.AssemblyReference.cache
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.AssemblyInfoInputs.cache
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.AssemblyInfo.cs
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.csproj.CoreCompileInputs.cache
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.dll
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\refint\Example.Domain.Entities.dll
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\Example.Domain.Entities.pdb
+D:\CSharp\RegistoPermisos\Example.Domain.Entities\obj\Debug\net6.0\ref\Example.Domain.Entities.dll
