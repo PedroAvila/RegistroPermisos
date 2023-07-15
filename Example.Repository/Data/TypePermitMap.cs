@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Example.Repository
 {
-    public class TipoPermisoMap : IEntityTypeConfiguration<TipoPermiso>
+    public class TypePermitMap : IEntityTypeConfiguration<TypePermit>
     {
-        public void Configure(EntityTypeBuilder<TipoPermiso> builder)
+        public void Configure(EntityTypeBuilder<TypePermit> builder)
         {
-            builder.ToTable("TipoPermisos");
+            builder.ToTable("TypePermits");
             builder.HasKey(c=>c.Id);
             builder.Property(c => c.Id).ValueGeneratedOnAdd();
 
-            builder.Property(c=>c.Descripcion).HasMaxLength(250).IsRequired();
+            builder.Property(c=>c.Description).HasMaxLength(250).IsRequired();
         }
     }
 }

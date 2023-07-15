@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Example.Repository.Migrations
 {
-    [DbContext(typeof(RegistroPermisoContext))]
+    [DbContext(typeof(RegistrationPermissionContext))]
     [Migration("20230715052658_init")]
     partial class init
     {

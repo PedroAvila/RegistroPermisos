@@ -2,7 +2,7 @@
 
 namespace Example.Api.Controllers
 {
-    public class PermisoController : Controller
+    public class PermissionController : Controller
     {
         public IActionResult Index()
         {

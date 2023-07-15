@@ -2,7 +2,7 @@
 
 namespace Example.Domain.Service
 {
-    public interface IPermisoRepository : IRepository<Permiso>
+    public interface IPermissionRepository : IRepository<Permission>
     {
 
     }

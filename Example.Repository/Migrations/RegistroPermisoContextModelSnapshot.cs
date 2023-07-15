@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Example.Repository.Migrations
 {
-    [DbContext(typeof(RegistroPermisoContext))]
+    [DbContext(typeof(RegistrationPermissionContext))]
     partial class RegistroPermisoContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

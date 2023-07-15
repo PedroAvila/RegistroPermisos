@@ -5,9 +5,9 @@ namespace Example.Repository
 {
     public class BaseRepository<T> : IRepository<T> where T : class
     {
-        private readonly RegistroPermisoContext _context;
+        private readonly RegistrationPermissionContext _context;
 
-        public BaseRepository(RegistroPermisoContext context)
+        public BaseRepository(RegistrationPermissionContext context)
         {
             _context = context;
         }
