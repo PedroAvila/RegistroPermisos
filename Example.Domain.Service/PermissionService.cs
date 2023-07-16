@@ -4,24 +4,31 @@ namespace Example.Domain.Service
 {
     public class PermissionService : IPermissionService
     {
-        public Task CreateAsync(Permission entity)
+        private readonly IUnitOfWork _unitOfWork;
+        public PermissionService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+
+            _unitOfWork = unitOfWork;
         }
 
-        public Task<IEnumerable<Permission>> GetAllAsync()
+        public async Task CreateAsync(Permission entity)
         {
-            throw new NotImplementedException();
+            await _unitOfWork.PermissionRepository.CreateAsync(entity);
         }
 
-        public Task<Permission> GetByIdAsync(int id)
+        public async Task<IEnumerable<Permission>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.PermissionRepository.GetAllAsync();
         }
 
-        public Task UpdateAsync(Permission entity)
+        public async Task<Permission> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.PermissionRepository.GetByIdAsync(id);
+        }
+
+        public async Task UpdateAsync(Permission entity)
+        {
+            await _unitOfWork.PermissionRepository.UpdateAsync(entity);
         }
     }
 }

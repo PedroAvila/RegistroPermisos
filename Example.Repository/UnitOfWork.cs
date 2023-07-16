@@ -6,17 +6,17 @@ namespace Example.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly RegistrationPermissionContext _context;
-        private readonly IRepository<Permission> _permisoRepository;
-        private readonly IRepository<TypePermit> _tipoPermisoRepository;
+        private readonly IRepository<Permission> _permitRepository;
+        private readonly IRepository<TypePermit> _typePermissionRepository;
 
         public UnitOfWork(RegistrationPermissionContext context)
         {
             _context = context;
         }
 
-        public IRepository<Permission> PermisoRepository => _permisoRepository ?? new BaseRepository<Permission>(_context);
+        public IRepository<Permission> PermissionRepository => _permitRepository ?? new BaseRepository<Permission>(_context);
 
-        public IRepository<TypePermit> TipoPermisoRepository => _tipoPermisoRepository ?? new BaseRepository<TypePermit>(_context);
+        public IRepository<TypePermit> TypePermitRepository => _typePermissionRepository ?? new BaseRepository<TypePermit>(_context);
 
         public void Dispose()
         {

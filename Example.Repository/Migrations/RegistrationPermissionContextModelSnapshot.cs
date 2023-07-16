@@ -4,7 +4,6 @@ using Example.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,10 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Example.Repository.Migrations
 {
     [DbContext(typeof(RegistrationPermissionContext))]
-    [Migration("20230715052658_init")]
-    partial class init
+    partial class RegistrationPermissionContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +22,7 @@ namespace Example.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Example.Domain.Entities.Permiso", b =>
+            modelBuilder.Entity("Example.Domain.Entities.Permission", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,28 +30,28 @@ namespace Example.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("ApellidoEmpleado")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<DateTime>("FechaPermiso")
+                    b.Property<DateTime>("DatePermission")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NombreEmpleado")
+                    b.Property<string>("EmployeeName")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("TipoPermiso")
+                    b.Property<string>("LastNameEmployee")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int>("TypePermit")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Permisos", (string)null);
+                    b.ToTable("Permits", (string)null);
                 });
 
-            modelBuilder.Entity("Example.Domain.Entities.TipoPermiso", b =>
+            modelBuilder.Entity("Example.Domain.Entities.TypePermit", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,14 +59,14 @@ namespace Example.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Descripcion")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TipoPermisos", (string)null);
+                    b.ToTable("TypePermits", (string)null);
                 });
 #pragma warning restore 612, 618
         }

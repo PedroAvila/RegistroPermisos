@@ -72,3 +72,5 @@ D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\Example.Repository.pdb
 D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\Example.Domain.Entities.pdb
 D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\Example.Domain.Service.dll
 D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\Example.Domain.Service.pdb
+D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\AutoMapper.dll
+D:\CSharp\RegistoPermisos\Example.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

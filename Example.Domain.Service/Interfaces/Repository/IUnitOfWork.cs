@@ -4,8 +4,8 @@ namespace Example.Domain.Service
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<Permission> PermisoRepository { get; }
-        IRepository<TypePermit> TipoPermisoRepository { get; }
+        IRepository<Permission> PermissionRepository { get; }
+        IRepository<TypePermit> TypePermitRepository { get; }
         Task SaveChangesAsync();
     }
 }
