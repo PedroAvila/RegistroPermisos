@@ -2,6 +2,7 @@
 using Example.Domain.Entities;
 using Example.Domain.Service;
 using Microsoft.AspNetCore.Mvc;
+using Nest;
 using System.Net;
 
 namespace Example.Api.Controllers
@@ -12,20 +13,36 @@ namespace Example.Api.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IPermissionService _permissionService;
-        public PermissionController(IMapper mapper, IPermissionService permissionService)
+        private readonly IElasticClient _elasticClient;
+        public PermissionController(IMapper mapper, IPermissionService permissionService, IElasticClient elasticClient)
         {
             _mapper = mapper;
             _permissionService = permissionService;
+            _elasticClient = elasticClient;
         }
 
-        [HttpGet]
-        [ProducesResponseType(typeof(CustomResponse<IEnumerable<PermissionDto>>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> Index()
+        //[HttpGet]
+        //[ProducesResponseType(typeof(CustomResponse<IEnumerable<PermissionDto>>), (int)HttpStatusCode.OK)]
+        //public async Task<IActionResult> Index()
+        //{
+        //    var categories = await _permissionService.GetAllAsync();
+        //    var response =
+        //        new CustomResponse<IEnumerable<PermissionDto>>("Success", _mapper.Map<IEnumerable<PermissionDto>>(categories));
+        //    return Ok(response);
+        //}
+
+        [HttpGet(Name = "GetPermission")]
+        public async Task<IActionResult> Get(string keyword)
         {
-            var categories = await _permissionService.GetAllAsync();
-            var response =
-                new CustomResponse<IEnumerable<PermissionDto>>("Success", _mapper.Map<IEnumerable<PermissionDto>>(categories));
-            return Ok(response);
+            var results = await _elasticClient.SearchAsync<PermissionDto>(
+                s => s.Query(
+                    q => q.QueryString(
+                        d => d.Query('*' + keyword + '*')
+                        )
+                    ).Size(1000)
+                );
+
+            return Ok(results.Documents.ToList());
         }
 
         [HttpGet("{id}")]
@@ -45,6 +62,9 @@ namespace Example.Api.Controllers
             var permission = _mapper.Map<Permission>(dto);
             await _permissionService.CreateAsync(permission);
             var response = new CustomResponse<PermissionDto>("Success", null);
+
+            await _elasticClient.IndexDocumentAsync(permission);
+
             return Ok(response);
         }
 
